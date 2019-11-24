@@ -1,0 +1,116 @@
+Modus Ponens Test:
+
+Query: Q
+
+Ans for Modus Ponens Test with model checking: True
+
+So by modelchecking ( P => Q ) ^ P entails Q
+
+Ans for Modus Ponens Test with Resolution: True
+
+So by Resolution ( P => Q ) ^ P entails Q
+
+Wumpus World:
+
+Query: P12
+
+Ans for Wumpus World with model checking: False
+
+Ans for Wumpus World with Resolution: False
+
+Unicorn:
+
+Query: Horned
+
+Ans for Unicorn with model checking: True
+
+So by modelchecking ( Mythical => Immortal ) ^ ( !Mythical => ( !Immortal ^ Mammal ) ) ^ ( ( Immortal v Mammal ) => Horned ) ^ ( Horned => Magical ) entails Horned
+
+Ans for Unicorn with Resolution: True
+
+So by Resolution ( Mythical => Immortal ) ^ ( !Mythical => ( !Immortal ^ Mammal ) ) ^ ( ( Immortal v Mammal ) => Horned ) ^ ( Horned => Magical ) entails Horned
+
+
+Query: Mythical
+
+Ans forUnicorn with model checking: MAYBE 
+
+Ans for Unicorn with Resolution: MAYBE
+
+
+Query: Magical
+
+Ans for Unicorn with model checking: True
+
+So by modelchecking ( Mythical => Immortal ) ^ ( !Mythical => ( !Immortal ^ Mammal ) ) ^ ( ( Immortal v Mammal ) => Horned ) ^ ( Horned => Magical ) entails Magical
+
+Ans for Unicorn with Resolution: True
+
+So by Resolution ( Mythical => Immortal ) ^ ( !Mythical => ( !Immortal ^ Mammal ) ) ^ ( ( Immortal v Mammal ) => Horned ) ^ ( Horned => Magical ) entails Magical
+
+Doors of Enlightenment -Smullyan's:
+
+Query: X
+
+Ans for Doors of Enlightenment -Smullyan's with model checking: True
+
+So by modelchecking ( A <=> X ) ^ ( B <=> ( Y v Z ) ) ^ ( C <=> ( A ^ B ) ) ^ ( D <=> ( X ^ Y ) ) ^ ( E <=> ( X ^ Z ) ) ^ ( F <=> ( D v E ) ) ^ ( G <=> ( C => F ) ) ^ ( H <=> ( ( G ^ H ) => A ) ) ^ ( X v Y v Z v W ) entails X
+
+Ans for Doors of Enlightenment -Smullyan's with Resolution: True
+
+So by Resolution ( A <=> X ) ^ ( B <=> ( Y v Z ) ) ^ ( C <=> ( A ^ B ) ) ^ ( D <=> ( X ^ Y ) ) ^ ( E <=> ( X ^ Z ) ) ^ ( F <=> ( D v E ) ) ^ ( G <=> ( C => F ) ) ^ ( H <=> ( ( G ^ H ) => A ) ) ^ ( X v Y v Z v W ) entails X
+
+
+Query: Y
+
+Ans forDoors of Enlightenment -Smullyan's with model checking: MAYBE 
+
+Ans for Doors of Enlightenment -Smullyan's with Resolution: MAYBE
+
+
+Query: Z
+
+Ans forDoors of Enlightenment -Smullyan's with model checking: MAYBE 
+
+Ans for Doors of Enlightenment -Smullyan's with Resolution: MAYBE
+
+
+Query: W
+
+Ans forDoors of Enlightenment -Smullyan's with model checking: MAYBE 
+
+Ans for Doors of Enlightenment -Smullyan's with Resolution: MAYBE
+
+Doors of Enlightenment -Lius's:
+
+Query: X
+
+Ans for Doors of Enlightenment -Lius's with model checking: True
+
+So by modelchecking ( A <=> X ) ^ ( H <=> ( ( G ^ H ) => A ) ) ^ ( C <=> A ) ^ ( G <=> ( C => L ) ) entails X
+
+Ans for Doors of Enlightenment -Lius's with Resolution: True
+
+So by Resolution ( A <=> X ) ^ ( H <=> ( ( G ^ H ) => A ) ) ^ ( C <=> A ) ^ ( G <=> ( C => L ) ) entails X
+
+
+Query: Y
+
+Ans forDoors of Enlightenment -Lius's with model checking: MAYBE 
+
+Ans for Doors of Enlightenment -Lius's with Resolution: MAYBE
+
+
+Query: Z
+
+Ans forDoors of Enlightenment -Lius's with model checking: MAYBE 
+
+Ans for Doors of Enlightenment -Lius's with Resolution: MAYBE
+
+
+Query: W
+
+Ans forDoors of Enlightenment -Lius's with model checking: MAYBE 
+
+Ans for Doors of Enlightenment -Lius's with Resolution: MAYBE
+
